@@ -43,7 +43,6 @@ async def presenttime(bot: commands.Bot):
                     sloth_list += f'<@{sloth}> '
                 await test_channel.send(sloth_list)
                 await test_channel.send(f"{overduer[0]} {overduer[1]} 과제가 기한 초과입니다!")
-        await test_channel.send(f" 현재 시간은 " + str(now.hour) + "시 " + str(now.minute) +"분 입니다.")
 
         await asyncio.sleep(60)
 
